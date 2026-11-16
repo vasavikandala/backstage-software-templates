@@ -37,8 +37,8 @@ spec:
       input:
         url: ./template
         values:
-          component_id: ${{ parameters.component_id }}
-          environment: ${{ parameters.environment }}
+          app_name: ${{ parameters.component_id }}
+          app_env: ${{ parameters.environment }}
 
     - id: publish
       name: Publish
@@ -47,7 +47,7 @@ spec:
         allowedHosts:
           - github.com
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=ricardoandre97&repo=${{ parameters.component_id }}
+        repoUrl: github.com?owner=vasavikandala&repo=${{ parameters.component_id }}
         protectDefaultBranch: false
 
     - id: register
