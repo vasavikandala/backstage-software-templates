@@ -3,7 +3,7 @@ name: ${{values.app_name}}-cicd
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ci:
