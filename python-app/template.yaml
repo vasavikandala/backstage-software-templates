@@ -39,6 +39,7 @@ spec:
         values:
           app_name: ${{ parameters.component_id }}
           app_env: ${{ parameters.environment }}
+    
 
     - id: publish
       name: Publish
@@ -46,7 +47,7 @@ spec:
       input:
   
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=vasavikandala&repo=${{ parameters.component_id }}
+        repoUrl: github.com?owner=vasavikandala-24&repo=${{ parameters.component_id }}
         defaultBranch: 'main'
 
     - id: register
