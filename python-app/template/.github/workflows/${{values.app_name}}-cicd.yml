@@ -35,7 +35,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: vasavikandala/${{values.app_name}}:${{ '${{ steps.short_sha.outputs.commit_id }}' }}
+          tags: vasavi2002/${{values.app_name}}:${{ '${{ steps.short_sha.outputs.commit_id }}' }}
 
   cd:
     needs: ci
