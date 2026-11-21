@@ -70,7 +70,7 @@ jobs:
         run: |
 
           # Connects the argocd repo
-          repo="'https://github.com/vasavikandala-24/${{values.app_name}}.git'"
+          repo="https://github.com/vasavikandala-24/${{values.app_name}}.git"
           argocd repo list | grep -q $repo || argocd repo add $repo
         
           # creates the argocd app
