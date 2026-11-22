@@ -1,7 +1,7 @@
 
 replicaCount: 1
 image:
-  repository: vasavikandala/${{values.app_name}}
+  repository: vasavi2002/${{values.app_name}}
   pullPolicy: IfNotPresent
   tag: ${{values.app_name}}-${{values.app_env}}-latest
 
