@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: ${{values.app_name}}
   labels:
-    app: ${{values.app_name}}
+    app.kubernetes.io/name: ${{values.app_name}}
 spec:
   type: ClusterIP
   selector:
-    app: ${{values.app_name}}
+    app.kubernetes.io/name: ${{values.app_name}}
   ports:
     - protocol: TCP
       port: 5000
