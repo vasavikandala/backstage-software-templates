@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ${{values.app_name}}
 spec:
-  type: clusterIP
+  type: ClusterIP
   selector:
     app: ${{values.app_name}}
   ports:
