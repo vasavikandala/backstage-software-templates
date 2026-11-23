@@ -9,7 +9,7 @@ app = Flask(__name__)
 def info():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%Sp on %B %d, %Y"),
-        'hostname': socket.gethostname()''
+        'hostname': socket.gethostname(),
         'message': 'You are doing greate, human!!! <3',
         'deployed_on': 'kubernetes'
         'env': '${{values.app_env}}',
