@@ -2,7 +2,7 @@
 replicaCount: 1
 image:
   repository: vasavi2002/${{values.app_name}}
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: ${{values.app_name}}-${{values.app_env}}-latest
 
 imagePullSecrets: []
